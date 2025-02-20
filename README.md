@@ -16,6 +16,11 @@ O seguidor de linha é um robô com o objetivo de completar o percurso de uma li
   # Driver de motors Ponte H L298N
 
   A ponte H L298N recebe o sinal PWM do Arduino e o manda para os motores e com que o Arduino não precise ceder potência para isso, já que a ponte H utiliza a potência da bateria para fazer essa comunicação: sinal do arduino para motores.  
+  Alimentação: 7,4 à 8,4 de uma bateria de LiPo;  
+  Pinos digitais e PWM escolhidos no Arduino:  
+  Motor direito: 4 e 5; (conectado em IN1 e IN2 da ponte H, respectivamente)  
+  Mortor esquerdo: 6 e 7; (conectado em IN3 e IN4 da ponte H, respectivamente)  
+  Lembrando que é preciso que pelo menos um dos pinos de cada motor seja PWM (sinalizado por "~" na placa Arduino) pois o controle depende disso.
   
   
   
